@@ -1,0 +1,15 @@
+#conteudo {
+  background-color: green;
+  padding: 20px;
+  border: solid red 2px;
+}
+
+.texto {
+  color: white;
+  font-size: 48px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.frase {
+  font-size: 24px;
+  color: yellow;
+}

@@ -1,0 +1,26 @@
+body {
+  background-color: gray;
+}
+
+.empresa {
+  color: brown;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.ramo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  letter-spacing: 6px;
+  word-spacing: 8px;
+  text-align: justify;
+}
+h2 {
+  border: thin aqua solid;
+}
+a {
+  border: thick dashed red;
+  border-bottom: 5px dotted green;
+}

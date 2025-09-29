@@ -1,0 +1,32 @@
+body{
+    border: solid 1px black;
+}
+
+.globo{
+    color: blue;
+}
+.facebook{
+    color: rgb(0, 255, 0);
+}
+.globo:visited{
+    color: rgb(255, 0, 0);
+}
+
+.globo:hover{
+    color: orange;
+}
+.disciplinas{
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    border: solid 2px red;
+}
+.disciplinas li{
+    color:blue;
+  border-bottom: solid 1px white;
+}
+.disciplinas li:first-child{
+   color: red;
+}
+.disciplinas li:last-child{
+    color: orange;
+}

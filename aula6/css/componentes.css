@@ -70,10 +70,25 @@
 }
 
 .depoimento > blockquote {
+  position: relative;
   margin: 0;
   padding: 0 60px;
   text-align: center;
   font-size: 1em;
+}
+.depoimento > blockquote::before {
+  position: absolute;
+  top: -0.4em;
+  left: 0.3em;
+  content: "\201C";
+  font-size: 7rem;
+}
+.depoimento > blockquote::after {
+  position: absolute;
+  top: -0.4em;
+  rigt: 0.3em;
+  content: "\201D";
+  font-size: 7rem;
 }
 
 .depoimento__autor {
@@ -112,4 +127,67 @@
 .botao--assinar {
   background-color: darkblue;
   color: #fff;
+}
+
+.botao--chaveador{
+  width: 24px;
+  height: 24px;
+  border: 0;
+  background: none;
+  background-image: url("../img/bars.png");
+  outline: none;
+}
+@media (min-width: 992px) {
+  .botao--chaveador{
+    display: none;
+  }
+}
+
+.navegacao {
+  display: flex;
+  justify-content: space-between;
+}
+.navegacao__menu {
+  padding-top: 15px;
+}
+
+.menu {
+}
+  
+.menu__item {
+  line-height: 3;
+  font-weight: bold;
+}
+
+@media (max-width: 991px) {
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: none;
+    padding: 20px;
+    width: 200px;
+    margin: 0;
+
+    border: 1px solid #eee;
+    background-color: #fbfbfb;
+
+    font-size: 1.2rem;
+    list-style: none;
+  }
+}
+@media(min-width: 992px){
+  .menu__item{
+    display: inline-block;
+    padding: 20px;
+
+  }
+  .menu__item:last-of-type{
+    padding-right: 0;
+  }
+}
+.menu--exibindo{
+  display: block;
+
 }

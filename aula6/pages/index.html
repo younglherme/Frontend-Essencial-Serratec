@@ -10,9 +10,21 @@
     <link rel="stylesheet" href="../css/componentes.css" />
   </head>
   <body>
-    <header class="layout-cabecalho--fixo">
+    <header class="layout-cabecalho layout-cabecalho--fixo">
       <div class="container">
-        <img src="../img/fla.png" alt="Internet" width="60px" />
+        <nav class="navegacao">
+          <img src="../img/fla.png" alt="Internet" width="60px" />
+          <div class="navegacao__menu">
+            <button class="botao--chaveador js botao--chaveador"></button>
+
+            <ul class="menu js-menu">
+              <li class="menu__item"><a href="#">Como Funciona</a></li>
+              <li class="menu__item"><a href="#">Planos e Preços</a></li>
+              <li class="menu__item"><a href="#">Contato</a></li>
+              <li class="menu__item"><a href="#">Login</a></li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
 
@@ -36,7 +48,7 @@
         <div class="depoimento">
           <blockquote>
             Gostei muito do plano de internet da empresa. Não tive problemas de
-            queda de conexão. Estou satisfeito com o serviço prestado.
+            queda de conexão. 
           </blockquote>
           <div class="depoimento__autor">
             <img src="../img/man.jpg" alt="depoimento" width="100px" />
@@ -82,7 +94,7 @@
               </footer>
             </article>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 ultima-coluna">
             <article class="plano">
               <h2 class="plano__cabecalho">Plano Avançado</h2>
               <div class="plano__preco">R$199,90/mês</div>
@@ -108,5 +120,6 @@
         </div>
       </div>
     </footer>
+    <script src="../js/app.js"></script>
   </body>
 </html>
